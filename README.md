@@ -110,23 +110,9 @@ Note-making-app/
 markdown
 ![Login](screenshots/login.png)
 ![Notes Dashboard](screenshots/dashboard.png)
-📃 License
-Licensed under the MIT License
 
 👨‍💻 Author
 Made with ❤️ by @harshit6ioy
 
-🌐 Live Demo (Optional)
-Link: your-deployed-app.com
-
-yaml
-
 ---
 
-### ✅ Final Step to Push README
-
-After pasting this into `README.md`, save the file and run:
-cd
-git add README.md
-git commit -m "Add full README with Tailwind setup"
-git push
