@@ -34,63 +34,37 @@ A full-featured **MERN Stack** application that allows users to securely create,
 
 ### 🔧 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/harshit6ioy/Note-making-app.git
 cd Note-making-app
 🛠 2. Backend Setup (/backend)
-bash
-Copy
-Edit
 cd backend
 npm install
 ✅ Installs:
-bash
-Copy
-Edit
 npm install express mongoose dotenv cors bcrypt jsonwebtoken validator
 Optional extras:
 
-bash
-Copy
-Edit
 npm install nodemon morgan cookie-parser
 🧾 Create .env in /backend:
 env
-Copy
-Edit
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 🚀 Run the backend server:
-bash
-Copy
-Edit
 node server.js
 # or with auto-reload:
 npx nodemon server.js
 💻 3. Frontend Setup (/frontend)
-bash
-Copy
-Edit
 cd ../frontend
 npm install
 ✅ Core Dependencies:
-bash
-Copy
-Edit
 npm install axios react-router-dom
 🎨 TailwindCSS Setup (if not already set up)
 If Tailwind isn’t yet installed, run:
 
-bash
-Copy
-Edit
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 Then update your tailwind.config.js:
 
-js
-Copy
-Edit
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -103,21 +77,12 @@ module.exports = {
 }
 Update src/index.css (or App.css) with:
 
-css
-Copy
-Edit
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 🌟 Optional UI Enhancements
-bash
-Copy
-Edit
 npm install @headlessui/react @heroicons/react
 ⚙️ Start the React App
-bash
-Copy
-Edit
 npm start
 🌐 Local URLs
 Service	URL
@@ -126,8 +91,6 @@ Backend	http://localhost:5000
 
 📁 Folder Structure
 pgsql
-Copy
-Edit
 Note-making-app/
 ├── backend/
 │   ├── controllers/
@@ -145,8 +108,6 @@ Note-making-app/
 └── README.md
 📸 Screenshots (Add Later)
 markdown
-Copy
-Edit
 ![Login](screenshots/login.png)
 ![Notes Dashboard](screenshots/dashboard.png)
 📃 License
@@ -159,16 +120,13 @@ Made with ❤️ by @harshit6ioy
 Link: your-deployed-app.com
 
 yaml
-Copy
-Edit
 
 ---
 
 ### ✅ Final Step to Push README
 
 After pasting this into `README.md`, save the file and run:
-
-```bash
+cd
 git add README.md
 git commit -m "Add full README with Tailwind setup"
 git push
