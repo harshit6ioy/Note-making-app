@@ -1,0 +1,18 @@
+# ========== BACKEND ==========
+backend/.env
+backend/node_modules/
+
+# ========== FRONTEND (optional but safe to duplicate) ==========
+frontend/node_modules/
+frontend/.env
+frontend/build
+frontend/dist
+
+# ========== COMMON ==========
+*.log
+.DS_Store
+.vscode/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
