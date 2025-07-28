@@ -1,4 +1,4 @@
-# NoteNest
+# Note-Making App
 
 A full-stack note-making application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). NoteNest lets users create, view, edit, and delete notes, with options for public and private visibility. It features secure authentication and a modern, responsive UI.
 
