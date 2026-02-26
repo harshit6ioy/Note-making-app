@@ -19,7 +19,7 @@ const signup = async (req, res) => {
   }
 };
 
-// ------------------ Login ------------------
+
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -38,7 +38,6 @@ const login = async (req, res) => {
   }
 };
 
-// ------------------ Get Profile Details ------------------
 const getProfileDetails = async (req, res) => {
   try {
     const user = await User.findById(req.userId).select("name email");
@@ -49,7 +48,6 @@ const getProfileDetails = async (req, res) => {
   }
 };
 
-// ------------------ Update Email ------------------
 const updateEmail = async (req, res) => {
   try {
     const { email } = req.body;
@@ -60,7 +58,6 @@ const updateEmail = async (req, res) => {
   }
 };
 
-// ------------------ Update Password ------------------
 const updatePassword = async (req, res) => {
   try {
     const { newPassword } = req.body;
@@ -72,12 +69,11 @@ const updatePassword = async (req, res) => {
   }
 };
 
-// ------------------ Get Note Stats (FIXED) ------------------
 const getNoteStats = async (req, res) => {
   try {
     const userId = req.userId;
 
-    // ✅ Corrected: use 'userId' field as per note.model.js
+  
     const totalNotes = await Note.countDocuments({ userId });
     const publicNotes = await Note.countDocuments({ userId, isPublic: true });
     const privateNotes = totalNotes - publicNotes;

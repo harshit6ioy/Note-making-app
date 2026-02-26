@@ -1,6 +1,7 @@
 # ========== BACKEND ==========
 backend/.env
 backend/node_modules/
+frontend/.env
 
 # ========== FRONTEND (optional but safe to duplicate) ==========
 frontend/node_modules/

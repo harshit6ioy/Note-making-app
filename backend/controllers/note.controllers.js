@@ -16,7 +16,6 @@ exports.createNote = async (req, res) => {
   }
 };
 
-// Get all notes for the logged-in user
 exports.getMyNotes = async (req, res) => {
   try {
     const notes = await Note.find({ userId: req.userId }).sort({ updatedAt: -1 });
@@ -26,7 +25,6 @@ exports.getMyNotes = async (req, res) => {
   }
 };
 
-// Update an existing note
 exports.updateNote = async (req, res) => {
   const { id } = req.params;
   const { title, content, isPublic } = req.body;
@@ -45,7 +43,7 @@ exports.updateNote = async (req, res) => {
   }
 };
 
-// Delete a note
+
 exports.deleteNote = async (req, res) => {
   const { id } = req.params;
   try {
@@ -59,7 +57,7 @@ exports.deleteNote = async (req, res) => {
   }
 };
 
-// ✅ NEW: Get all public notes with user names
+
 exports.getPublicNotes = async (req, res) => {
   try {
     const notes = await Note.find({ isPublic: true })
