@@ -1,0 +1,6 @@
+C:\note-making-app\note-app\frontend\src\pages\Notes.js: line 18, col 22, Warning - 'setSearchTerm' is assigned a value but never used. (no-unused-vars)
+C:\note-making-app\note-app\frontend\src\pages\Notes.js: line 19, col 28, Warning - 'setFilterPublicOnly' is assigned a value but never used. (no-unused-vars)
+C:\note-making-app\note-app\frontend\src\pages\Notes.js: line 20, col 22, Warning - 'setFilterDate' is assigned a value but never used. (no-unused-vars)
+C:\note-making-app\note-app\frontend\src\pages\Notes.js: line 21, col 21, Warning - 'setSortOrder' is assigned a value but never used. (no-unused-vars)
+
+4 problems
